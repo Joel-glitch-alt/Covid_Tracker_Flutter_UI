@@ -47,7 +47,7 @@ class _StateBoxState extends State<StateBox> {
               Text(
                 widget.value,
                 style: GoogleFonts.mavenPro(
-                  fontSize: 20,
+                  fontSize: 15,
                   fontWeight: FontWeight.w500,
                   color: Colors.white,
                 ),
@@ -56,7 +56,7 @@ class _StateBoxState extends State<StateBox> {
                   ? Text(
                       widget.type,
                       style: GoogleFonts.mavenPro(
-                        fontSize: 20,
+                        fontSize: 15,
                         fontWeight: FontWeight.w500,
                         color: Colors.white,
                       ),
