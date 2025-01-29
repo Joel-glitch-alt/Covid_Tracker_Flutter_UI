@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
-import 'stateBox.dart'; // Make sure this import path matches your project structure
+import 'stateBox.dart'; // Ensure this import is correct
 
 class Content extends StatelessWidget {
   const Content({super.key});
@@ -10,6 +10,7 @@ class Content extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
+        // Makes the content scrollable
         child: Column(
           children: [
             Stack(
@@ -63,19 +64,14 @@ class Content extends StatelessWidget {
                           fontWeight: FontWeight.w500,
                         ),
                       ),
-                      const SizedBox(
-                        width: 10,
-                      ),
+                      const SizedBox(width: 10),
                       const Icon(Icons.calendar_today),
                     ],
                   ),
                 ],
               ),
             ),
-            const SizedBox(
-              height: 10,
-            ),
-            ////<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>////
+            const SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: Column(
@@ -83,7 +79,6 @@ class Content extends StatelessWidget {
                   Row(
                     children: [
                       Expanded(
-                        flex: 1,
                         child: StateBox(
                           color: Colors.red,
                           value: "100,300",
@@ -91,11 +86,8 @@ class Content extends StatelessWidget {
                           type: "total",
                         ),
                       ),
-                      const SizedBox(
-                        width: 10,
-                      ),
+                      const SizedBox(width: 10),
                       Expanded(
-                        flex: 1,
                         child: StateBox(
                           color: Colors.green,
                           value: "70,345",
@@ -105,13 +97,10 @@ class Content extends StatelessWidget {
                       ),
                     ],
                   ),
-                  const SizedBox(
-                    height: 10,
-                  ),
+                  const SizedBox(height: 10),
                   Row(
                     children: [
                       Expanded(
-                        flex: 1,
                         child: StateBox(
                           color: Colors.orange,
                           value: "50,320",
@@ -119,11 +108,8 @@ class Content extends StatelessWidget {
                           type: "Active",
                         ),
                       ),
-                      const SizedBox(
-                        width: 10,
-                      ),
+                      const SizedBox(width: 10),
                       Expanded(
-                        flex: 1,
                         child: StateBox(
                           color: Colors.black,
                           value: "30,300",
@@ -136,17 +122,13 @@ class Content extends StatelessWidget {
                 ],
               ),
             ),
-            SizedBox(
-              height: 10,
-            ),
+            const SizedBox(height: 10),
             Text(
               "Vaccine Statistics",
               style: GoogleFonts.mavenPro(
                   fontSize: 25, fontWeight: FontWeight.w500),
             ),
-            SizedBox(
-              height: 10,
-            ),
+            const SizedBox(height: 10),
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: Column(
@@ -154,7 +136,6 @@ class Content extends StatelessWidget {
                   Row(
                     children: [
                       Expanded(
-                        flex: 1,
                         child: StateBox(
                           color: Colors.blue,
                           value: "1.7M",
@@ -162,9 +143,8 @@ class Content extends StatelessWidget {
                           type: "aaaa",
                         ),
                       ),
-                      SizedBox(width: 10),
+                      const SizedBox(width: 10),
                       Expanded(
-                        flex: 1,
                         child: StateBox(
                           color: Colors.blue,
                           value: "2.8M",
@@ -174,18 +154,16 @@ class Content extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(
-                    height: 10,
-                  ),
+                  const SizedBox(height: 10),
                   StateBox(
                     color: Colors.blue,
                     total: "Vaccine rate",
                     value: "56.8",
                     type: "ccccc",
-                  )
+                  ),
                 ],
               ),
-            )
+            ),
           ],
         ),
       ),

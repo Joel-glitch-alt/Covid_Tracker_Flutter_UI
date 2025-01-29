@@ -52,7 +52,7 @@ class _StateBoxState extends State<StateBox> {
                   color: Colors.white,
                 ),
               ),
-              widget.type.isNotEmpty // ✅
+              widget.type.isNotEmpty
                   ? Text(
                       widget.type,
                       style: GoogleFonts.mavenPro(
@@ -61,7 +61,7 @@ class _StateBoxState extends State<StateBox> {
                         color: Colors.white,
                       ),
                     )
-                  : const SizedBox(), // ✅
+                  : const SizedBox(),
             ],
           ),
         ],
